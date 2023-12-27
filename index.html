@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container my-5">
-      <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <div class="container my-5 jumbotron">
+      <div class="p-5 text-center rounded-3">
         <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
         <h1 class="text-body-emphasis">Hoteles</h1>
         <p class="col-lg-8 mx-auto fs-5 text-muted">
@@ -27,33 +28,107 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col"><h1>Hotel Barcelona</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id leo ac libero blandit congue eu in erat. Vestibulum egestas id nisl eget tincidunt. Pellentesque accumsan, ipsum ut elementum hendrerit, dui erat iaculis ex, sollicitudin egestas ex diam nec nulla. Ut mattis semper blandit. Phasellus interdum massa lacus, ac rhoncus ipsum molestie et. Aliquam eget lorem est. Nulla placerat justo eget mauris sollicitudin auctor. Phasellus et sapien id nulla ultricies euismod non eu mi. Quisque rhoncus lobortis congue. Proin ullamcorper feugiat neque, in bibendum mauris egestas at. Suspendisse placerat, arcu quis bibendum molestie, lacus ex pretium mauris, eget elementum leo augue in massa. Integer leo sem, iaculis sed ex et, euismod commodo urna. Nulla sollicitudin sapien ac tellus bibendum rutrum. Proin vulputate orci sit amet iaculis lacinia. Sed porttitor, tellus vitae pharetra cursus, eros augue finibus dolor, a egestas orci metus quis ex. Duis lacus purus, fermentum at elementum a, feugiat sit amet nunc.
-          <button>Ver mas</button>
+        <div class="col"><h1>Como funciona</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id leo ac libero blandit congue eu in erat. 
         </div>
-        <div class="col"><h1>Hotel Valencia</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id leo ac libero blandit congue eu in erat. Vestibulum egestas id nisl eget tincidunt. Pellentesque accumsan, ipsum ut elementum hendrerit, dui erat iaculis ex, sollicitudin egestas ex diam nec nulla. Ut mattis semper blandit. Phasellus interdum massa lacus, ac rhoncus ipsum molestie et. Aliquam eget lorem est. Nulla placerat justo eget mauris sollicitudin auctor. Phasellus et sapien id nulla ultricies euismod non eu mi. Quisque rhoncus lobortis congue. Proin ullamcorper feugiat neque, in bibendum mauris egestas at. Suspendisse placerat, arcu quis bibendum molestie, lacus ex pretium mauris, eget elementum leo augue in massa. Integer leo sem, iaculis sed ex et, euismod commodo urna. Nulla sollicitudin sapien ac tellus bibendum rutrum. Proin vulputate orci sit amet iaculis lacinia. Sed porttitor, tellus vitae pharetra cursus, eros augue finibus dolor, a egestas orci metus quis ex. Duis lacus purus, fermentum at elementum a, feugiat sit amet nunc.
-          <button>Ver mas</button>
+        <div class="col"><h1>Donde reservo</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id leo ac libero blandit congue eu in erat. Vestibulum egestas id nisl eget tincidunt. 
         </div>
-        <div class="col"><h1>Hotel Madrid</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id leo ac libero blandit congue eu in erat. Vestibulum egestas id nisl eget tincidunt. Pellentesque accumsan, ipsum ut elementum hendrerit, dui erat iaculis ex, sollicitudin egestas ex diam nec nulla. Ut mattis semper blandit. Phasellus interdum massa lacus, ac rhoncus ipsum molestie et. Aliquam eget lorem est. Nulla placerat justo eget mauris sollicitudin auctor. Phasellus et sapien id nulla ultricies euismod non eu mi. Quisque rhoncus lobortis congue. Proin ullamcorper feugiat neque, in bibendum mauris egestas at. Suspendisse placerat, arcu quis bibendum molestie, lacus ex pretium mauris, eget elementum leo augue in massa. Integer leo sem, iaculis sed ex et, euismod commodo urna. Nulla sollicitudin sapien ac tellus bibendum rutrum. Proin vulputate orci sit amet iaculis lacinia. Sed porttitor, tellus vitae pharetra cursus, eros augue finibus dolor, a egestas orci metus quis ex. Duis lacus purus, fermentum at elementum a, feugiat sit amet nunc.
-          <button>Ver mas</button>
+        <div class="col"><h1>Como pago</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap flex-row-reverse">
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+          <h1>Hotel Barcelona</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          </div>
+          <div>
+            <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
+        </div>
+        </div>
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+          <h1>Hotel Valencia</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          </div>
+          <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+          </div>
+        </div>
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+            <h1>Hotel Madrid</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>          
+          </div>
+          <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+          </div>
+        </div>
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+          <h1>Hotel Barcelona</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
+        </div>
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+          <h1>Hotel Barcelona</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
+        </div>
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div>
+          <h1>Hotel Barcelona</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          </div>
+          <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
+        </div>
+        <div class=" card-hotel d-flex flex-column justify-content-between">
+          <div><h1>Hotel Barcelona</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          </div>
+          <div>
+          <button class="btn btn-primary btn-reserva">Reservar</button>
+        </div>
         </div>
       </div>
     </div>
 
-      <div class="row">
-      <div class="col"><h1>Hotel Barcelona</h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id leo ac libero blandit congue eu in erat. Vestibulum egestas id nisl eget tincidunt. Pellentesque accumsan, ipsum ut elementum hendrerit, dui erat iaculis ex, sollicitudin egestas ex diam nec nulla. Ut mattis semper blandit. Phasellus interdum massa lacus, ac rhoncus ipsum molestie et. Aliquam eget lorem est. Nulla placerat justo eget mauris sollicitudin auctor. Phasellus et sapien id nulla ultricies euismod non eu mi. Quisque rhoncus lobortis congue. Proin ullamcorper feugiat neque, in bibendum mauris egestas at. Suspendisse placerat, arcu quis bibendum molestie, lacus ex pretium mauris, eget elementum leo augue in massa. Integer leo sem, iaculis sed ex et, euismod commodo urna. Nulla sollicitudin sapien ac tellus bibendum rutrum. Proin vulputate orci sit amet iaculis lacinia. Sed porttitor, tellus vitae pharetra cursus, eros augue finibus dolor, a egestas orci metus quis ex. Duis lacus purus, fermentum at elementum a, feugiat sit amet nunc.
-      </div>
-      <div class="col"><h1>Hotel Valencia</h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id leo ac libero blandit congue eu in erat. Vestibulum egestas id nisl eget tincidunt. Pellentesque accumsan, ipsum ut elementum hendrerit, dui erat iaculis ex, sollicitudin egestas ex diam nec nulla. Ut mattis semper blandit. Phasellus interdum massa lacus, ac rhoncus ipsum molestie et. Aliquam eget lorem est. Nulla placerat justo eget mauris sollicitudin auctor. Phasellus et sapien id nulla ultricies euismod non eu mi. Quisque rhoncus lobortis congue. Proin ullamcorper feugiat neque, in bibendum mauris egestas at. Suspendisse placerat, arcu quis bibendum molestie, lacus ex pretium mauris, eget elementum leo augue in massa. Integer leo sem, iaculis sed ex et, euismod commodo urna. Nulla sollicitudin sapien ac tellus bibendum rutrum. Proin vulputate orci sit amet iaculis lacinia. Sed porttitor, tellus vitae pharetra cursus, eros augue finibus dolor, a egestas orci metus quis ex. Duis lacus purus, fermentum at elementum a, feugiat sit amet nunc.
-      </div>
-      <div class="col"><h1>Hotel Madrid</h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id leo ac libero blandit congue eu in erat. Vestibulum egestas id nisl eget tincidunt. Pellentesque accumsan, ipsum ut elementum hendrerit, dui erat iaculis ex, sollicitudin egestas ex diam nec nulla. Ut mattis semper blandit. Phasellus interdum massa lacus, ac rhoncus ipsum molestie et. Aliquam eget lorem est. Nulla placerat justo eget mauris sollicitudin auctor. Phasellus et sapien id nulla ultricies euismod non eu mi. Quisque rhoncus lobortis congue. Proin ullamcorper feugiat neque, in bibendum mauris egestas at. Suspendisse placerat, arcu quis bibendum molestie, lacus ex pretium mauris, eget elementum leo augue in massa. Integer leo sem, iaculis sed ex et, euismod commodo urna. Nulla sollicitudin sapien ac tellus bibendum rutrum. Proin vulputate orci sit amet iaculis lacinia. Sed porttitor, tellus vitae pharetra cursus, eros augue finibus dolor, a egestas orci metus quis ex. Duis lacus purus, fermentum at elementum a, feugiat sit amet nunc.
-      </div>
+      
+  </div>
+  <footer>
+  <div class="row">
+
+    <div class="col-sm-4 d-flex flex-column">
+      <a href="https://www.facebook.com">Facebook</a>
+      <a href="https://www.facebook.com">Twitter</a>
+      <a href="https://www.facebook.com">Instagram</a>
+      <a href="https://www.facebook.com">Google</a>
+    </div>
+    <div class="col-sm-4">
+      <address>Quito, Ecuador</address>
+    </div>
+    <div class="col-sm-4 d-flex flex-column align-items-end">
+      <a href="https://www.facebook.com">Nosotros</a>
+      <a href="https://www.facebook.com">Precios</a>
+      <a href="https://www.facebook.com">Instagram</a>
+      <a href="https://www.facebook.com">Google</a>
     </div>
   </div>
+  </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="node_modules/popper.js/dist/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
